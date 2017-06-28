@@ -5,13 +5,7 @@ import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/databa
     selector: 'app-root',
     templateUrl: './app.component.html',
     styleUrls: ['./app.component.css'],
-    template: `
-      <ul>
-        <li *ngFor="let item of items | async">
-          {{ item.name }}
-        </li>
-      </ul>
-    `
+
 
 
   })
