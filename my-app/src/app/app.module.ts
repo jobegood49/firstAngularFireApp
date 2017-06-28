@@ -4,6 +4,9 @@ import { AppComponent } from './app.component';
 import { AngularFireModule } from 'angularfire2';
 import { environment } from '../environments/environment';
 import {AngularFireDatabaseModule} from "angularfire2/database";
+import {RouterModule} from "@angular/router";
+import {appRoutes} from "./app.routes";
+import {Page1Module} from "./page1/page1.module";
 
 
 
@@ -13,9 +16,10 @@ import {AngularFireDatabaseModule} from "angularfire2/database";
   ],
   imports: [
     BrowserModule,
+    RouterModule.forRoot(appRoutes),
     AngularFireModule.initializeApp(environment.firebase),
-    AngularFireDatabaseModule
-
+    AngularFireDatabaseModule,
+    Page1Module
   ],
   providers: [],
   bootstrap: [AppComponent]

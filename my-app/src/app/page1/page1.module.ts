@@ -6,6 +6,7 @@ import { Page1Component } from './page1.component';
   imports: [
     CommonModule
   ],
-  declarations: [Page1Component]
+  declarations: [Page1Component],
+  exports: [Page1Component]
 })
 export class Page1Module { }
