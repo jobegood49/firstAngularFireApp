@@ -6,6 +6,7 @@ import { ShoeListComponent } from './shoe-list.component';
   imports: [
     CommonModule
   ],
-  declarations: [ShoeListComponent]
+  declarations: [ShoeListComponent],
+  exports: [ShoeListComponent]
 })
 export class ShoeListModule { }

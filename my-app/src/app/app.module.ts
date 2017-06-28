@@ -8,6 +8,7 @@ import {RouterModule} from "@angular/router";
 import {appRoutes} from "./app.routes";
 import {Page1Module} from "./page1/page1.module";
 import {HeaderModule} from "./header/header.module";
+import {ShoeListModule} from "./shoes/shoe-list/shoe-list.module";
 
 
 
@@ -22,7 +23,8 @@ import {HeaderModule} from "./header/header.module";
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule,
     Page1Module,
-    HeaderModule
+    HeaderModule,
+    ShoeListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

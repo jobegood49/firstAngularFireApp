@@ -1,0 +1,13 @@
+.row
+  .column.medium-12
+
+    div(*ngFor='let s of shoes')
+      .card(style='width: 300px;')
+        .card-divider
+          | This is a header
+        img(src='{{s.imagePath}}')
+        .card-section
+          h4 {{s.name}}
+          p {{s.description}}
+
+
