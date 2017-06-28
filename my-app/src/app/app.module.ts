@@ -7,6 +7,8 @@ import {AngularFireDatabaseModule} from "angularfire2/database";
 import {RouterModule} from "@angular/router";
 import {appRoutes} from "./app.routes";
 import {Page1Module} from "./page1/page1.module";
+import {HeaderModule} from "./header/header.module";
+
 
 
 
@@ -19,7 +21,8 @@ import {Page1Module} from "./page1/page1.module";
     RouterModule.forRoot(appRoutes),
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule,
-    Page1Module
+    Page1Module,
+    HeaderModule
   ],
   providers: [],
   bootstrap: [AppComponent]
