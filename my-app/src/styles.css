@@ -1,1 +1,5 @@
-/* You can add global styles to this file, and also import other style files */
+.center-cols {
+  float:none; /* disable the float */
+  display: inline-block; /* make blocks inline-block */
+  text-align: initial; /* restore text-align to default */
+}
