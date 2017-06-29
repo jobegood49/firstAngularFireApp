@@ -1,0 +1,10 @@
+p {{ (flag | async)}}
+
+
+.row
+  .columns(*ngIf=' !(flag | async) ')
+    .button(href='#', (click)="plus()") Plus
+    p {{ (count | async)}}
+    .button(href='#', (click)="minus()") Minus
+
+
